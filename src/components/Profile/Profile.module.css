@@ -10,6 +10,7 @@
     width: 300px;
     box-shadow: 5px 5px 5px rgb(188, 180, 180);
     background-color: white;
+    border-radius: 5px;
 }
 
 .description {
@@ -35,7 +36,7 @@
 
 .tag {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
     color: rgb(113, 118, 118);
 }
@@ -48,7 +49,9 @@
 .stats {
     list-style: none;
     display: flex;
-    border: 0.5px solid rgb(161, 163, 165);
+    border: 0.5px solid rgb(193, 194, 194);
+    border-radius: 0px 0px 5px 5px;
+    overflow: hidden;
 }
 
 .stats_item {
@@ -56,11 +59,22 @@ width: 99.5px;
 height: 70px;
 display: flex;
 flex-direction: column;
-background-color: rgb(212, 212, 212);
 align-items: center;
 justify-content: center;
+background-color: rgb(223, 240, 243);
 }
 
 .stats_item:not(:last-child) {
-    border-right: 0.5px solid rgb(161, 163, 165);
+    border-right: 0.5px solid rgb(193, 194, 194);
+}
+
+.label {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(113, 118, 118);
+}
+
+.quantity{
+    font-size: 16px;
+    font-weight: 600;
 }
